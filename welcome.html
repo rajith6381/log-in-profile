@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+
+</header>
+
+<div class="container2">
+<div class="hole-cont" id="hole">
+
+</div>
+</div>
+
+<script>
+    let bikes=[
+        {
+            image:"url(./images/bike-1.jpg)",
+            brand:"Bajaj",
+            type:"CT 100",
+            year:"2021",
+            price:"100000"
+        },
+        {
+            image:"url(./images/bike-4.jpg)",
+            brand:"KTM",
+            type:"Dominar",
+            year:"2020",
+            price:"22500"
+        },
+        {
+            image:"url(./images/bike-3.jpg)",
+            brand:"Bajaj",
+            type:"Pulsar",
+            year:"2019",
+            price:"115000"
+        }, {
+            image:"url(./images/bike-2.jpg)",
+            brand:"Bajaj",
+            type:"Pulsar",
+            year:"2021",
+            price:"175000"
+        },
+        {
+            image:"url(./images/bike-5.jpg)",
+            brand:"Bajaj",
+            type:"Pulsar",
+            year:"2021",
+            price:"100000"
+        },
+        {
+            image:"url(./images/bike-3.jpg)",
+            brand:"Bajaj",
+            type:"Pulsar",
+            year:"2021",
+            price:"100000"
+        },
+        {
+            image:"url(./images/bike-3.jpg)",
+            brand:"Bajaj",
+            type:"Pulsar",
+            year:"2021",
+            price:"100000"
+        },
+        {
+            image:"url(./images/bike-3.jpg)",
+            brand:"Bajaj",
+            type:"Pulsar",
+            year:"2021",
+            price:"100000"
+        },
+        {
+            image:"url(./images/bike-3.jpg)",
+            brand:"Bajaj",
+            type:"Pulsar",
+            year:"2021",
+            price:"100000"
+        },
+        {
+            image:"url(./images/bike-3.jpg)",
+            brand:"Bajaj",
+            type:"Pulsar",
+            year:"2021",
+            price:"100000"
+        },
+        {
+            image:"url(./images/bike-3.jpg)",
+            brand:"Bajaj",
+            type:"Pulsar",
+            year:"2021",
+            price:"100000"
+        },
+        {
+            image:"url(./images/bike-3.jpg)",
+            brand:"Bajaj",
+            type:"Pulsar",
+            year:"2021",
+            price:"100000"
+        }
+    ];
+
+     bikes.forEach((e)=>{
+        
+       let bikehole = document.getElementById("hole")
+        let bikeimg = document.createElement("div")
+        let bikeitems =document.createElement("div")
+        let bikedetails =document.createElement("div")
+        let bikebrand= document.createElement("h3");
+        let biketype =document.createElement("h4");
+        let bikeyear = document.createElement("h4");
+        let bikeprice =document.createElement("p");
+
+       bikeitems.setAttribute("class","bike-items");
+       bikeimg.setAttribute("class","bike-img")
+       bikedetails.setAttribute("class","details")
+
+
+       bikeimg.style.backgroundImage = e.image;
+       bikebrand.innerText = e.brand;
+       biketype.innerText = e.type;
+       bikeyear.innerText = e.year;
+       bikeprice    .innerText = e.price;
+
+
+       bikedetails.append(bikebrand,biketype,bikeyear,bikeprice);
+       bikeitems.append(bikeimg,bikedetails);
+       bikehole.appendChild(bikeitems)
+     })
+</script>
+</body>
+</html>
