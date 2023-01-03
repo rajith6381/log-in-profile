@@ -2,15 +2,33 @@
     width: 50%;
     margin:auto;
 }
+header{
+    display: none;
+}
+.head{
+    margin-bottom: 30px;
+}
+
+h1{
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+h4{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+p{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
 input{
     display: block;
     margin-bottom: 2rem;
     padding: 5px 15px 5px 15px;
-    border:none;
     box-shadow: 0 0 10px rgb(39, 37, 37);
     border-radius: 10px;
-    justify-content: center
-    
+    justify-content: center;
+    border-top: none;
+    border-left: none;
+    border-right: none;
 }
 .form-cont{
     display: flex;
@@ -26,6 +44,9 @@ input{
 }
 .form2-cont{
     display: none;
+}
+.form3-cont{
+    display: block;
 }
 .form-cont1{
     display: flex;
@@ -49,6 +70,53 @@ button{
 }
 label{
 font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.pro-img{
+    display: flex;
+}
+.user-name{
+    width: 30%;
+   height:80vh
+}
+.user-d{
+    width: 70%;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-left: 3px solid #ccc;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding-left: 20px;
+}
+.my-img{
+    width: 100%;
+    height: 50vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+
+}
+
+.content h1{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+.well-come{
+    text-shadow: 0 0 10px #FF0000;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.bike-img{
+    width: 100%;
+    height: 30vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: ;
+}
+.bike-items{
+    width: 31%;
+    box-shadow: 0 0 10px #000;
+
 }
 
 
